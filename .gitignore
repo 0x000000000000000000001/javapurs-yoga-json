@@ -12,3 +12,6 @@ output.bak/
 /.idea/
 .spec-results
 .DS_Store
+java_output/
+classes/
+.spago/

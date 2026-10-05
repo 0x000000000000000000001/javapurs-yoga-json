@@ -15,3 +15,6 @@ output.bak/
 java_output/
 classes/
 .spago/
+.purmeta/
+*.class
+*.java.bak

@@ -1,8 +1,13 @@
 # purescript-yoga-json
 
+## JVM tests
+
+`./bin/test` delegates to the [common runner](../javapurs/docs/testing.md#port-particulier) as `yoga-json`, but currently exits **1** with an unsupported-completion diagnostic: `Test.Main` uses `launchAff_`, dynamic spec-discovery and spec-node process exit without a joined completion action.
+`./bin/test --help` is read-only. Even with `--clean`, this unsupported protocol is rejected before build/workspace creation; the checkout and its outputs are preserved. See the [protocol inventory](../javapurs/docs/port-launchers.md).
+
 `yoga-json` is a light-weight and simple json library for purescript. 
 
-**Note**: This library was initially forked from the amazing [simple-json](https://github.com/justinwoo/purescript-simple-json) ([MIT Licence](./LICENSE/simple-json.LICENSE)).
+**Note**: This library was initially forked from the amazing [simple-json](https://github.com/justinwoo/purescript-simple-json) ([MIT Licence](./LICENCE/simple-json.LICENSE)).
 Replace your imports from `Simple.JSON` to `Yoga.JSON` to migrate.
 ## Table of Contents
 * [features](#features)
